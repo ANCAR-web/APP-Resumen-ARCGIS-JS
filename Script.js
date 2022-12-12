@@ -304,7 +304,7 @@ const cargarapp = ()=>{
           content: editor
         });
 
-    view.ui.add(expand, "bottom-left");
+    view.ui.add(expand, "top-left");
 
 
        centros_poblados.queryFeatures().then((results)=>{
