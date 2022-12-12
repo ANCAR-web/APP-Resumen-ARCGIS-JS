@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    color:white;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo{
+    font-size: 50px;
+    color:white;
+}
+header .Titulo{
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.login-form-container{
+    position: fixed;
+    top:-120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form-container.active{
+    top:0;
+  }
+  
+  .login-form-container .lorem-data{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lorem-data>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .lorem-data>h3{
+    font-size:45px;
+    color:white;
+    text-align: center;
+  }
+.lorem-data>h4{
+    font-size:35px;
+    color:white;
+    text-align: center;
+}
+  .login-form-container #form-close{
+    position: absolute;
+    top:2rem; right:3rem;
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+  }
+  #viewDiv{width: 100%;
+           height: 800px;} 
+
+  .contenedor-vista-muncipios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    background: rgba(0,0,0,0.6);
+    color:yellow;}
+
+    .contenedor-vista-muncipios h2{
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .contenedor-vista-muncipios img{
+      width: 200x;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .contenedor-vista-muncipios span{
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+      text-shadow: 1px 1px 1px rgb(229, 229, 218);
+    }
+
+
+  @media (max-width:1200px){
+
+    html{
+      font-size: 55%;
+    }
+  
+  }
+  
+  @media (max-width:991px){
+  
+    header{
+      padding:2rem;
+    }
+  
+    section{
+      padding:2rem;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+    .login-form-container #form-close{
+        position: absolute;
+        top:2rem; right:3rem;
+        font-size: 1.5rem;
+        color:#fff;
+        cursor: pointer;
+      }
+    .lorem-data>h3{
+        font-size:25px;
+        color:white;
+        text-align: center;
+      }
+    .lorem-data>h4{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+    }
+    
+  }
+  
